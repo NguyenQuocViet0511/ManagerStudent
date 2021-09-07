@@ -32,8 +32,18 @@ namespace ManagerStudents
 
         private void exit_Click(object sender, EventArgs e)
         {
-            if (exita) // true
+
+            if (exita) // bang true
                 Application.Exit();
+
+
+        }
+
+        private void PROGRAMFORM_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (exita) // true
+                if (MessageBox.Show("you wanna exit ", "erro", MessageBoxButtons.OKCancel) != DialogResult.OK)
+                    e.Cancel = true;
         }
     }
 }

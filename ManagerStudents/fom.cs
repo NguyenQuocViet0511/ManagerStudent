@@ -25,6 +25,9 @@ namespace ManagerStudents
 
         private void exit_Click(object sender, EventArgs e)
         {
+          
+           
+               
             Application.Exit();
         }
 
@@ -63,6 +66,13 @@ namespace ManagerStudents
                
             }
             return false;
+        }
+
+        private void fom_FormClosing(object sender, FormClosingEventArgs e)
+        {
+
+            if (MessageBox.Show("you wanna exit", "erre", MessageBoxButtons.OKCancel) != DialogResult.OK)
+                e.Cancel = true;
         }
     }
 }

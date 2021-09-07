@@ -62,6 +62,7 @@ namespace ManagerStudents
             this.Controls.Add(this.logout);
             this.Name = "PROGRAMFORM";
             this.Text = "PROGRAMFORM";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.PROGRAMFORM_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.PROGRAMFORM_FormClosed);
             this.ResumeLayout(false);
 

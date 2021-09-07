@@ -124,6 +124,7 @@ namespace ManagerStudents
             this.Controls.Add(this.label1);
             this.Name = "fom";
             this.Text = "fom";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.fom_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 
